@@ -1,0 +1,22 @@
+# Dependencies (keep dist — built by deploy script / CI before docker build)
+node_modules/
+h5/node_modules/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / IDE
+.DS_Store
+*.log
+.idea/
+.vscode/
+*.swp
+
+# Stitch / design exports (optional local assets)
+stitch-design/
+*.zip
+
+# Docker local overrides
+docker-compose.override.yml
